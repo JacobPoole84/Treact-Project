@@ -508,11 +508,34 @@ STEPS ↓
 
 */
 
+.steps__img--wrapper {
+    width: 50%;
+    display: flex;
+    position: relative;
+}
+
+.steps__img {
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+
+.steps__description {
+    width: 50%;
+    padding: 32px 0;
+    padding-left: 64px;
+}
 
 #steps .row {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#steps .section__title {
+    text-align: left;
+    color: rgb(36, 62, 99);
+    line-height: normal;
 }
 
 
