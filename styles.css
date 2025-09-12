@@ -67,6 +67,16 @@ button {
     border: none;
 }
 
+svg:not(:root) {
+    overflow-clip-margin: content-box;
+    overflow: hidden;
+}
+
+g[Attributes Style] {
+    fill: rgba(100, 21, 255, 0.15);
+}
+
+
 
 /* 
 
@@ -520,6 +530,19 @@ STEPS ↓
     z-index: 2;
 }
 
+.steps__grid {
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10rem;
+    height: 10rem;
+    opacity: 0.8;
+    z-index: -10;
+    color: rgb(100, 21, 255);
+    fill: currentColor;
+}
+
 .steps__description {
     width: 50%;
     padding: 32px 0;
@@ -536,6 +559,75 @@ STEPS ↓
     text-align: left;
     color: rgb(36, 62, 99);
     line-height: normal;
+}
+
+.step {
+    display: flex;
+    margin-top: 32px;
+}
+
+.step__number {
+    font-size: 32px;
+    font-weight: 900;
+    color: #6415ff;
+    margin-right: 24px;
+}
+
+.step__title {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(36, 62, 99);
+}
+
+.step__para {
+    margin-top: 8px;
+    color: #7c8ba1;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+
+use[Attributes Style] {
+    transform: translate(0, 0);
+}
+
+use[Attributes Style] {
+    transform: translate(0, 100);
+}
+
+use[Attributes Style] {
+    transform: translate(0, 200);
+}
+
+use[Attributes Style] {
+    transform: translate(0, 300);
+}
+
+use[Attributes Style] {
+    transform: translate(0, 400);
+}
+
+use[Attributes Style] {
+    transform: translate(0, 500);
+}
+
+use[Attributes Style] {
+    transform: translate(0, 600);
+}
+
+use[Attributes Style] {
+    transform: translate(0, 700);
+}
+
+use[Attributes Style] {
+    transform: translate(0, 800);
+}
+
+use[Attributes Style] {
+    transform: translate(0, 900);
 }
 
 
@@ -634,6 +726,12 @@ MOBILE RESPONSIVENESS ↓
     .header__img--wrapper {
         display: flex;
         justify-content: flex-end;
+    }
+
+        .steps__grid {
+        height: 5rem;
+        width: 5rem;
+        bottom: -50px;
     }
 }
 
